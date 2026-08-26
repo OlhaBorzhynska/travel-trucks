@@ -15,8 +15,8 @@
   --green-hover: #6d7b75;
 
   /* Fonts */
-  --font-primary: var(--font-inter);
-  --font-secondary: var(--font-manrope);
+  /* --font-primary: var(--font-inter), sans-serif;
+  --font-secondary: var(--font-manrope), sans-serif; */
 }
 
 *,
@@ -31,7 +31,6 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-primary);
 }
 
 button,
@@ -53,3 +52,10 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* .container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 64px;
+} */

@@ -3,6 +3,7 @@ import { Inter, Manrope } from "next/font/google";
 import Providers from "./providers";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import Header from "@/components/Header/Header";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${manrope.variable}`}>
         <Providers>
+          <Header />
           {children}
           <Toaster />
         </Providers>
