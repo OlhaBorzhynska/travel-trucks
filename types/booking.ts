@@ -1,6 +1,8 @@
-// export interface BookingData {
-//   name: string;
-//   email: string;
-//   bookingDate: string;
-//   comment?: string;
-// }
+export interface BookingRequest {
+  name: string;
+  email: string;
+}
+
+export interface BookingResponse {
+  message: string;
+}
