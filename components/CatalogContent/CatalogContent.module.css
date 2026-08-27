@@ -1,0 +1,35 @@
+.catalogList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.btnLoadMore {
+  border: 1px solid var(--gray-light);
+  border-radius: 200px;
+  padding: 16px 24px;
+  width: 145px;
+  height: 56px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--main);
+
+  display: block;
+  margin: 0 auto;
+}
+
+.btnLoadMore:hover,
+.btnLoadMore:focus {
+  border-color: var(--green-hover);
+}
+
+.btnLoadMore:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

@@ -17,8 +17,10 @@
 }
 
 .logo {
-  display: inline-block;
   line-height: 0;
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .navigation {

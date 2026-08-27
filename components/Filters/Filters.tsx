@@ -41,6 +41,14 @@ export function Filters() {
     router.push(`/catalog?${params.toString()}`);
   };
 
+  const handleClearFilters = () => {
+    setLocation("");
+    setForm("");
+    setEngine("");
+    setTransmission("");
+    router.push("/catalog");
+  };
+
   return (
     <aside className={css.filters}>
       <div className={css.locationSection}>
@@ -92,8 +100,8 @@ export function Filters() {
             <input
               type="radio"
               name="form"
-              value="panelTruck"
-              checked={form === "panelTruck"}
+              value="panel_van"
+              checked={form === "panel_van"}
               onChange={(event) => setForm(event.target.value)}
             />
             Panel Van
@@ -114,8 +122,8 @@ export function Filters() {
             <input
               type="radio"
               name="form"
-              value="semiIntegrated"
-              checked={form === "semiIntegrated"}
+              value="semi_integrated"
+              checked={form === "semi_integrated"}
               onChange={(event) => setForm(event.target.value)}
             />
             Semi Integrated
@@ -206,7 +214,11 @@ export function Filters() {
           Search
         </button>
 
-        <button type="button" className={css.clearButton}>
+        <button
+          type="button"
+          className={css.clearButton}
+          onClick={handleClearFilters}
+        >
           <svg
             aria-hidden="true"
             width="12"

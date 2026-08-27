@@ -36,6 +36,7 @@ export interface Camper {
   engine: CamperEngine;
   amenities: CamperAmenity[];
   coverImage: string;
+  description: string;
 }
 
 export interface CamperGalleryImage {
@@ -47,8 +48,6 @@ export interface CamperGalleryImage {
 }
 
 export interface CamperDetails extends Camper {
-  description: string;
-  amenities: CamperAmenity[];
   gallery: CamperGalleryImage[];
   createdAt: string;
   updatedAt: string;

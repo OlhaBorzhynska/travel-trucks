@@ -1,25 +1,14 @@
-/* .container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1440px;
-  padding: 0 64px;
-} */
-
 .page {
-  padding: 48px 64px;
+  padding: 48px 0;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 64px;
 
   display: flex;
   gap: 65px;
-}
-
-.filters {
-  width: 360px;
-  flex-shrink: 0;
 }
 
 .catalog {
