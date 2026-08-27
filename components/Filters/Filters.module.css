@@ -1,0 +1,180 @@
+.filters {
+  width: 360px;
+  flex-shrink: 0;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: var(--inputs);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.locationSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 40px;
+}
+
+.locationLabel {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.locationInputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.locationIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--gray);
+}
+
+.locationInput {
+  border-radius: 12px;
+  padding: 18px 20px 18px 48px;
+  width: 312px;
+  height: 56px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--white);
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main);
+  outline: none;
+}
+
+.locationInput::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.locationIconActive {
+  fill: var(--main);
+}
+
+.filtersLabel {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main);
+  margin: 0 0 24px 0;
+}
+
+.filterWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filterTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray);
+  margin-bottom: 8px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main);
+  cursor: pointer;
+}
+
+.radioLabel input {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--text);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.searchButton {
+  border-radius: 200px;
+  border: none;
+  padding: 16px 60px;
+  width: 312px;
+  height: 56px;
+  background-color: var(--grey-green);
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+
+.searchButton:hover,
+.searchButton:focus {
+  background-color: var(--green-hover);
+}
+
+.clearButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: 1px solid var(--gray-light);
+  border-radius: 200px;
+  padding: 16px 32px;
+  width: 312px;
+  height: 56px;
+  background-color: var(--white);
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--main);
+}
+
+.btnIcon {
+  stroke: var(--main);
+}
+
+.clearButton:hover,
+.clearButton:focus {
+  background-color: var(--gray-light);
+}
