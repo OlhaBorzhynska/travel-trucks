@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 200px 141px 200px;
+  background: var(--inputs);
+  width: 100%;
+  border-radius: 16px;
+}
+
+.image {
+  object-fit: contain;
+  margin-bottom: 0;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  text-align: center;
+  color: var(--main);
+  margin-bottom: 16px;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--main);
+  margin-bottom: 43px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.viewAllButton {
+  border-radius: 200px;
+  padding: 16px 30px;
+  width: 192px;
+  height: 56px;
+  background-color: var(--grey-green);
+  cursor: pointer;
+  border: none;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+
+.viewAllButton:hover,
+.viewAllButton:focus {
+  background-color: var(--green-hover);
+}
+
+.clearButton {
+  cursor: pointer;
+  border: 1px solid var(--gray-light);
+  border-radius: 200px;
+  padding: 16px 32px;
+  width: 192px;
+  height: 56px;
+  background-color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--main);
+}
+
+.btnIcon {
+  stroke: var(--main);
+}
+
+.clearButton:hover,
+.clearButton:focus {
+  background-color: var(--gray-light);
+}

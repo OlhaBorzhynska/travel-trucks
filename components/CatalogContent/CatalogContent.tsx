@@ -1,9 +1,10 @@
 "use client";
 
 import css from "./CatalogContent.module.css";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import { useCampers } from "@/hooks/useCampers";
 import { CamperCard } from "@/components/CamperCard/CamperCard";
+import { EmptyCampers } from "@/components/EmptyCampers/EmptyCampers";
 import type {
   CamperEngine,
   CamperForm,
@@ -48,6 +49,11 @@ const getTransmission = (
 
 export function CatalogContent() {
   const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const handleReset = () => {
+    router.push("/catalog");
+  };
 
   const filters = {
     location: searchParams.get("location") || undefined,
@@ -76,7 +82,7 @@ export function CatalogContent() {
   }
 
   if (campers.length === 0) {
-    return <p>No campers found.</p>;
+    return <EmptyCampers onReset={handleReset} />;
   }
 
   return (
