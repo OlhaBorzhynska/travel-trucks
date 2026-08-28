@@ -43,9 +43,9 @@ export default function CamperPageContent({
         </div>
 
         <div className={css.bottomSection}>
-          <CamperReviews />
+          <CamperReviews camperId={camper.id} />
 
-          <BookingForm />
+          <BookingForm camperId={camper.id} />
         </div>
       </div>
     </main>

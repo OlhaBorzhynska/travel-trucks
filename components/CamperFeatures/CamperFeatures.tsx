@@ -1,4 +1,6 @@
 import type { CamperDetails } from "@/types/camper";
+import css from "./CamperFeatures.module.css";
+import { formatText, formatValue } from "@/lib/utils/formatText";
 
 interface CamperFeaturesProps {
   camper: CamperDetails;
@@ -6,26 +8,51 @@ interface CamperFeaturesProps {
 
 export default function CamperFeatures({ camper }: CamperFeaturesProps) {
   return (
-    <section>
-      <h2>Features</h2>
+    <section className={css.sectionCamperFeatures}>
+      <h2 className={css.title}>Vehicle details</h2>
 
-      <ul>
+      <ul className={css.features}>
         {camper.amenities.map((amenity) => (
-          <li key={amenity}>{amenity}</li>
+          <li key={amenity} className={css.feature}>
+            {formatText(amenity)}
+          </li>
         ))}
       </ul>
 
-      <h2>Vehicle details</h2>
+      <hr className={css.line} />
 
-      <ul>
-        <li>Form: {camper.form}</li>
-        <li>Length: {camper.length}</li>
-        <li>Width: {camper.width}</li>
-        <li>Height: {camper.height}</li>
-        <li>Tank: {camper.tank}</li>
-        <li>Consumption: {camper.consumption}</li>
-        <li>Transmission: {camper.transmission}</li>
-        <li>Engine: {camper.engine}</li>
+      <ul className={css.details}>
+        <ul className={css.details}>
+          <li className={css.detail}>
+            <span>Form</span>
+            <span>{formatText(camper.form)}</span>
+          </li>
+
+          <li className={css.detail}>
+            <span>Length</span>
+            <span>{formatValue(camper.length)}</span>
+          </li>
+
+          <li className={css.detail}>
+            <span>Width</span>
+            <span>{formatValue(camper.width)}</span>
+          </li>
+
+          <li className={css.detail}>
+            <span>Height</span>
+            <span>{formatValue(camper.height)}</span>
+          </li>
+
+          <li className={css.detail}>
+            <span>Tank</span>
+            <span>{formatValue(camper.tank)}</span>
+          </li>
+
+          <li className={css.detail}>
+            <span>Consumption</span>
+            <span>{formatValue(camper.consumption)}</span>
+          </li>
+        </ul>
       </ul>
     </section>
   );

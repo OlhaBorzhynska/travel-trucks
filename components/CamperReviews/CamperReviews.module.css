@@ -1,0 +1,73 @@
+.title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: var(--main);
+  margin-bottom: 24px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.review {
+  border-radius: 16px;
+  padding: 16px;
+  width: 623px;
+  background-color: var(--inputs);
+  transition: transform 250ms ease;
+}
+
+.review:hover,
+.review:focus {
+  transform: scale(1.02);
+}
+
+.avatarRatingWrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.avatarName {
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--white);
+
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: var(--grey-green);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameRatingWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main);
+}
+
+.comment {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+}

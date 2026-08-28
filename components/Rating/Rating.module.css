@@ -1,0 +1,14 @@
+.ratingWrapper {
+  display: flex;
+  gap: 4px;
+}
+
+.ratingIconYellow {
+  flex-shrink: 0;
+  fill: var(--rating);
+}
+
+.ratingIcon {
+  flex-shrink: 0;
+  fill: var(--gray-light);
+}

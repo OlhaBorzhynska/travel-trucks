@@ -36,6 +36,7 @@ export default function CamperGallery({ gallery }: CamperGalleryProps) {
               width={638}
               height={505}
               className={css.mainImage}
+              loading="eager"
             />
           </SwiperSlide>
         ))}
