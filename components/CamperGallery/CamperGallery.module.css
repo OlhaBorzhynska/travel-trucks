@@ -1,0 +1,47 @@
+.gallery {
+  width: 100%;
+}
+
+.mainSwiper {
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.mainImage {
+  display: block;
+  width: 638px;
+  height: 505px;
+  object-fit: cover;
+  border-radius: 17px;
+}
+
+.thumbsSwiper {
+  width: 100%;
+  height: 144px;
+}
+
+.thumbImage {
+  display: block;
+  border-radius: 16px;
+  width: 136px;
+  height: 144px;
+  object-fit: cover;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition:
+    transform 250ms ease,
+    border-color 250ms ease;
+}
+
+.thumbsSwiper :global(.swiper-slide-thumb-active) .thumbImage {
+  border: 3px solid #829b91;
+}
+
+.thumbImage:hover,
+.thumbImage:focus {
+  transform: scale(1.05);
+}
+
+.swiper-wrapper {
+  gap: 32px;
+}

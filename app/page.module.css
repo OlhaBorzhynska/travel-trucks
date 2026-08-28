@@ -5,10 +5,11 @@
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../public/images/hero-background.webp");
-  max-width: 1440px;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
   margin: 0 auto;
 }
 

@@ -1,0 +1,33 @@
+.page {
+  padding: 64px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 92px;
+}
+
+.topSection > :first-child {
+  min-width: 0;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bottomSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}

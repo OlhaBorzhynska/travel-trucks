@@ -1,11 +1,13 @@
-import css from "./camper.module.css";
+import CamperPageContent from "@/components/CamperPageContent/CamperPageContent";
 
-export default function Camper() {
-  return (
-    <main>
-      <section className={css.section}>
-        <h1 className={css.title}>Camper</h1>
-      </section>
-    </main>
-  );
+interface CamperPageProps {
+  params: Promise<{
+    camperId: string;
+  }>;
+}
+
+export default async function CamperPage({ params }: CamperPageProps) {
+  const { camperId } = await params;
+
+  return <CamperPageContent camperId={camperId} />;
 }
