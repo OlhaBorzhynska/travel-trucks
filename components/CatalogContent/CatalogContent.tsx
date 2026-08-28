@@ -5,11 +5,14 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { useCampers } from "@/hooks/useCampers";
 import { CamperCard } from "@/components/CamperCard/CamperCard";
 import { EmptyCampers } from "@/components/EmptyCampers/EmptyCampers";
+
 import type {
   CamperEngine,
   CamperForm,
   CamperTransmission,
 } from "@/types/camper";
+import Loader from "../Loader/Loader";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 const getForm = (value: string | null): CamperForm | undefined => {
   if (
@@ -69,16 +72,17 @@ export function CatalogContent() {
     fetchNextPage,
     hasNextPage,
     isFetchingNextPage,
+    refetch,
   } = useCampers(filters);
 
   const campers = data?.pages.flatMap((page) => page.campers) ?? [];
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   if (isError) {
-    return <p>Something went wrong. Please try again.</p>;
+    return <ErrorMessage onRetry={() => refetch()} />;
   }
 
   if (campers.length === 0) {

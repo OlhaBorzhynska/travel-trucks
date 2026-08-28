@@ -36,7 +36,7 @@ export function CamperCard({ camper }: CamperCardProps) {
               height="15"
               className={css.ratingIcon}
             >
-              <use href={`../icons/sprite.svg#icon-Rating`} />
+              <use href={`/icons/sprite.svg#icon-Rating`} />
             </svg>
 
             <span className={css.metaText}>
@@ -69,7 +69,7 @@ export function CamperCard({ camper }: CamperCardProps) {
                 height="20"
                 className={css.featureIcon}
               >
-                <use href={`../icons/sprite.svg#icon-Petrol`} />
+                <use href={`/icons/sprite.svg#icon-Petrol`} />
               </svg>
               {formatText(camper.engine)}
             </span>
@@ -83,7 +83,7 @@ export function CamperCard({ camper }: CamperCardProps) {
                 height="20"
                 className={css.featureIcon}
               >
-                <use href={`../icons/sprite.svg#icon-Automatic`} />
+                <use href={`/icons/sprite.svg#icon-Automatic`} />
               </svg>
               {formatText(camper.transmission)}
             </span>
@@ -97,14 +97,19 @@ export function CamperCard({ camper }: CamperCardProps) {
                 height="20"
                 className={css.featureIcon}
               >
-                <use href={`../icons/sprite.svg#icon-Alcove`} />
+                <use href={`/icons/sprite.svg#icon-Alcove`} />
               </svg>
               {formatText(camper.form)}
             </span>
           </li>
         </ul>
 
-        <Link href={`/catalog/${camper.id}`} className={css.showMoreButton}>
+        <Link
+          href={`/catalog/${camper.id}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={css.showMoreButton}
+        >
           Show more
         </Link>
       </div>

@@ -7,6 +7,8 @@ import CamperFeatures from "@/components/CamperFeatures/CamperFeatures";
 import CamperReviews from "@/components/CamperReviews/CamperReviews";
 import BookingForm from "@/components/BookingForm/BookingForm";
 import css from "./CamperPageContent.module.css";
+import Loader from "../Loader/Loader";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 interface CamperPageContentProps {
   camperId: string;
@@ -15,14 +17,14 @@ interface CamperPageContentProps {
 export default function CamperPageContent({
   camperId,
 }: CamperPageContentProps) {
-  const { data: camper, isLoading, isError } = useCamper(camperId);
+  const { data: camper, isLoading, isError, refetch } = useCamper(camperId);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   if (isError) {
-    return <p>Something went wrong. Please try again later.</p>;
+    return <ErrorMessage onRetry={() => refetch()} />;
   }
 
   if (!camper) {

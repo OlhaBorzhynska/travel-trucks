@@ -65,7 +65,7 @@ export function Filters() {
               location ? css.locationIconActive : ""
             }`}
           >
-            <use href={`../icons/sprite.svg#icon-Map`} />
+            <use href={`/icons/sprite.svg#icon-Map`} />
           </svg>
 
           <input
@@ -225,7 +225,7 @@ export function Filters() {
             height="12"
             className={css.btnIcon}
           >
-            <use href={`../icons/sprite.svg#icon-Close`} />
+            <use href={`/icons/sprite.svg#icon-Close`} />
           </svg>
           Clear filters
         </button>

@@ -32,7 +32,7 @@ export function EmptyCampers({ onReset }: EmptyCampersProps) {
             height="12"
             className={css.btnIcon}
           >
-            <use href={`../icons/sprite.svg#icon-Close`} />
+            <use href={`/icons/sprite.svg#icon-Close`} />
           </svg>
           Clear filters
         </button>

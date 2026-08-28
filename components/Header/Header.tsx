@@ -12,7 +12,7 @@ export default function Header() {
       <div className={css.container}>
         <Link href="/" className={css.logo}>
           <svg aria-hidden="true" width="136" height="15">
-            <use href={`../icons/sprite.svg#icon-TravelTrucks`} />
+            <use href={`/icons/sprite.svg#icon-TravelTrucks`} />
           </svg>
         </Link>
 
@@ -27,7 +27,7 @@ export default function Header() {
           <Link
             href="/catalog"
             className={`${css.link} ${
-              pathname === "/catalog" ? css.active : ""
+              pathname.startsWith("/catalog") ? css.active : ""
             }`}
           >
             Catalog

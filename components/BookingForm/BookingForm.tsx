@@ -83,7 +83,7 @@ export default function BookingForm({ camperId }: BookingFormProps) {
                   height="20"
                   className={css.errorIcon}
                 >
-                  <use href="../icons/sprite.svg#icon-Error" />
+                  <use href="/icons/sprite.svg#icon-Error" />
                 </svg>
               </div>
               <ErrorMessage
@@ -106,7 +106,7 @@ export default function BookingForm({ camperId }: BookingFormProps) {
                   height="20"
                   className={css.errorIcon}
                 >
-                  <use href="../icons/sprite.svg#icon-Error" />
+                  <use href="/icons/sprite.svg#icon-Error" />
                 </svg>
               </div>
               <ErrorMessage

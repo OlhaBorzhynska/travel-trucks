@@ -16,7 +16,7 @@ export default function Rating({ rating }: RatingProps) {
               height="16"
               className={css.ratingIconYellow}
             >
-              <use href="../icons/sprite.svg#icon-Rating" />
+              <use href="/icons/sprite.svg#icon-Rating" />
             </svg>
           ) : (
             <svg
@@ -25,7 +25,7 @@ export default function Rating({ rating }: RatingProps) {
               height="17"
               className={css.ratingIcon}
             >
-              <use href="../icons/sprite.svg#icon-Star" />
+              <use href="/icons/sprite.svg#icon-Star" />
             </svg>
           )}
         </span>

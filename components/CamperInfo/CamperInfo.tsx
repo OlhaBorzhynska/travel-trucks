@@ -18,7 +18,7 @@ export default function CamperInfo({ camper }: CamperInfoProps) {
             height="15"
             className={css.ratingIcon}
           >
-            <use href={`../icons/sprite.svg#icon-Rating`} />
+            <use href={`/icons/sprite.svg#icon-Rating`} />
           </svg>
 
           <span className={css.metaText}>
