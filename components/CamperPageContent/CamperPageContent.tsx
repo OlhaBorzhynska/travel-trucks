@@ -58,7 +58,7 @@ export default function CamperPageContent({
 
   return (
     <main className={css.page}>
-      <div className={css.container}>
+      <div className="container">
         <div className={css.topSection}>
           <CamperGallery gallery={camper.gallery} />
 

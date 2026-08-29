@@ -60,9 +60,3 @@ export interface CampersResponse {
   totalPages: number;
   campers: Camper[];
 }
-
-export interface CamperFiltersResponse {
-  forms: CamperForm[];
-  transmissions: CamperTransmission[];
-  engines: CamperEngine[];
-}

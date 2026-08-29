@@ -2,13 +2,6 @@
   padding: 136px 0;
 }
 
-.container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 64px;
-}
-
 .topSection {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -6,7 +6,6 @@
 }
 
 .title {
-  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -15,7 +14,6 @@
 }
 
 .text {
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -48,7 +46,7 @@
   height: 16px;
   background-color: #ffdfdf;
 
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33333;
@@ -60,7 +58,6 @@
 }
 
 .input {
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -76,7 +73,6 @@
 }
 
 .input:placeholder {
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -105,7 +101,6 @@
 }
 
 .error {
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -125,7 +120,6 @@
   background-color: var(--grey-green);
   border: none;
 
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;

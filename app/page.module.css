@@ -13,15 +13,7 @@
   margin: 0 auto;
 }
 
-.container {
-  max-width: 1440px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 64px;
-}
-
 .title {
-  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 48px;
   line-height: 0.67;
@@ -30,7 +22,6 @@
 }
 
 .text {
-  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;
@@ -39,7 +30,6 @@
 }
 
 .link {
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;

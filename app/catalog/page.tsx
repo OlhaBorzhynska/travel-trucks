@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function CatalogPage() {
   return (
     <main className={css.page}>
-      <div className={css.container}>
+      <div className={`container ${css.content}`}>
         <Filters />
 
         <section className={css.catalog}>
