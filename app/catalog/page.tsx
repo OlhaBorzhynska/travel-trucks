@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import css from "./catalog.module.css";
 import { Filters } from "@/components/Filters/Filters";
 import { CatalogContent } from "@/components/CatalogContent/CatalogContent";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Camper Catalog | TravelTrucks",
@@ -16,7 +17,9 @@ export default function CatalogPage() {
         <Filters />
 
         <section className={css.catalog}>
-          <CatalogContent />
+          <Suspense fallback={null}>
+            <CatalogContent />
+          </Suspense>
         </section>
       </div>
     </main>
