@@ -51,13 +51,15 @@ export default function CamperGallery({ gallery }: CamperGalleryProps) {
       >
         {gallery.map((image) => (
           <SwiperSlide key={image.id}>
-            <Image
-              src={image.thumb}
-              alt="Camper thumbnail"
-              width={136}
-              height={144}
-              className={css.thumbImage}
-            />
+            <div className={css.thumbWrapper}>
+              <Image
+                src={image.thumb}
+                alt="Camper thumbnail"
+                width={136}
+                height={144}
+                className={css.thumbImage}
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

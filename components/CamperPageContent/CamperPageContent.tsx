@@ -9,6 +9,8 @@ import BookingForm from "@/components/BookingForm/BookingForm";
 import css from "./CamperPageContent.module.css";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import { EmptyState } from "../EmptyState/EmptyState";
+import axios from "axios";
 
 interface CamperPageContentProps {
   camperId: string;
@@ -17,18 +19,41 @@ interface CamperPageContentProps {
 export default function CamperPageContent({
   camperId,
 }: CamperPageContentProps) {
-  const { data: camper, isLoading, isError, refetch } = useCamper(camperId);
+  const {
+    data: camper,
+    isLoading,
+    isError,
+    refetch,
+    error,
+  } = useCamper(camperId);
 
   if (isLoading) {
     return <Loader />;
   }
 
   if (isError) {
+    if (axios.isAxiosError(error) && error.response?.status === 404) {
+      return (
+        <EmptyState
+          title="Camper not found"
+          text={
+            <>
+              We couldn&apos;t find the camper you&apos;re looking for.
+              <br />
+              Try returning to the catalog and choosing another camper.
+            </>
+          }
+          buttonText="Go to catalog"
+          href="/catalog"
+        />
+      );
+    }
+
     return <ErrorMessage onRetry={() => refetch()} />;
   }
 
   if (!camper) {
-    return <p>Camper not found.</p>;
+    return null;
   }
 
   return (

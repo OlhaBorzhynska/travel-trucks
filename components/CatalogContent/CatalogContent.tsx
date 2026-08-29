@@ -4,7 +4,6 @@ import css from "./CatalogContent.module.css";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useCampers } from "@/hooks/useCampers";
 import { CamperCard } from "@/components/CamperCard/CamperCard";
-import { EmptyCampers } from "@/components/EmptyCampers/EmptyCampers";
 
 import type {
   CamperEngine,
@@ -13,6 +12,7 @@ import type {
 } from "@/types/camper";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import { EmptyState } from "../EmptyState/EmptyState";
 
 const getForm = (value: string | null): CamperForm | undefined => {
   if (
@@ -86,7 +86,19 @@ export function CatalogContent() {
   }
 
   if (campers.length === 0) {
-    return <EmptyCampers onReset={handleReset} />;
+    return (
+      <EmptyState
+        title="No campers found"
+        text={
+          <>
+            We couldn&apos;t find any campers that match your filters. <br />{" "}
+            Try adjusting your search or clearing some filters.{" "}
+          </>
+        }
+        buttonText="View all campers"
+        onClick={handleReset}
+      />
+    );
   }
 
   return (

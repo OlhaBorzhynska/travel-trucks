@@ -10,6 +10,8 @@
 
   background-color: var(--inputs);
   border-bottom: 1px solid var(--badges);
+
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.06);
 }
 
 .container {
