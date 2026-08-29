@@ -1,7 +1,6 @@
 @import "modern-normalize";
 
 :root {
-  /* Colors */
   --main: #101828;
   --text: #475467;
   --white: #fff;
@@ -16,7 +15,6 @@
   --olive: #f0f1f1;
   --green-hover: #6d7b75;
 
-  /* Fonts */
   --font-primary: var(--font-inter), sans-serif;
   --font-secondary: var(--font-manrope), sans-serif;
 }
