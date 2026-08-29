@@ -18,7 +18,7 @@ export default function CamperGallery({ gallery }: CamperGalleryProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
-    <div className={css.gallery}>
+    <section className={css.gallery}>
       <Swiper
         modules={[Thumbs]}
         thumbs={{
@@ -63,6 +63,6 @@ export default function CamperGallery({ gallery }: CamperGalleryProps) {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 }
