@@ -53,7 +53,20 @@ export default function CamperPageContent({
   }
 
   if (!camper) {
-    return null;
+    return (
+      <EmptyState
+        title="Camper not found"
+        text={
+          <>
+            We couldn&apos;t find the camper you&apos;re looking for.
+            <br />
+            Try returning to the catalog and choosing another camper.
+          </>
+        }
+        buttonText="Go to catalog"
+        href="/catalog"
+      />
+    );
   }
 
   return (

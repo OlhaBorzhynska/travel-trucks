@@ -12,12 +12,20 @@ export async function generateMetadata({
   params,
 }: CamperPageProps): Promise<Metadata> {
   const { camperId } = await params;
-  const camper = await getCamperById(camperId);
 
-  return {
-    title: `${camper.name} | TravelTrucks`,
-    description: camper.description,
-  };
+  try {
+    const camper = await getCamperById(camperId);
+
+    return {
+      title: `${camper.name} | TravelTrucks`,
+      description: camper.description,
+    };
+  } catch {
+    return {
+      title: "TravelTrucks",
+      description: "Find the perfect camper for your next adventure.",
+    };
+  }
 }
 
 export default async function CamperPage({ params }: CamperPageProps) {
