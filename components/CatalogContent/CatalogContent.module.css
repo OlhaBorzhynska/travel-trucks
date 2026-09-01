@@ -12,6 +12,7 @@
   padding: 16px 24px;
   width: 145px;
   height: 56px;
+  background-color: var(--white);
 
   font-weight: 500;
   font-size: 16px;

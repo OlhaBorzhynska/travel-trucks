@@ -4,6 +4,7 @@
   padding: 24px;
   border-radius: 20px;
   background-color: var(--inputs);
+  height: 840px;
 
   display: flex;
   flex-direction: column;
@@ -168,5 +169,5 @@
 
 .clearButton:hover,
 .clearButton:focus {
-  background-color: var(--gray-light);
+  border-color: var(--green-hover);
 }
