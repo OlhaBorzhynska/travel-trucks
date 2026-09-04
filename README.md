@@ -8,9 +8,9 @@
 
 ## 📖 About the Project
 
-**🌐Live Page:** [View Project](https://travel-trucks-three-nu.vercel.app/)
+**🌐 Live Page:** [View Project](https://travel-trucks-three-nu.vercel.app/)
 
-**TravelTrucks** is a web application for searching and renting campers for travel. Users can browse the catalog of available campers, use filters to find a suitable option, view detailed information about each camper, browse photo galleries, features and reviews, as well as submit a booking request.
+**TravelTrucks** is a web application for searching for and booking campers for travel. Users can browse the catalog of available campers, apply filters to find a suitable option, view detailed camper information, explore photo galleries, features, and reviews, and submit a booking request.
 
 ---
 
@@ -25,14 +25,13 @@
 - Filter by location.
 - Filter by body type.
 - Filter by available equipment.
-- Dynamically load additional cards using Load more.
-- Properly display the empty state when no campers are found based on the selected parameters.
+- Load additional campers using the "Load more" button.
+- Display an empty state when no campers match the selected filters.
 
 **🔍 Camper Details Page**
-- View detailed information about the camper.
+- View detailed camper information.
 - Photo gallery.
-- View main features.
-- Information about equipment and camper details.
+- Display camper specifications and amenities.
 - View user reviews.
 - Navigation between the features and reviews sections.
 
@@ -58,7 +57,7 @@
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,git,github,figma,nextjs,ts,vercel,vscode&theme=light)](https://skillicons.dev)
 
-| Технологія            | Призначення                                   |
+| Technology            | Purpose                                       |
 | :-------------------- | :----------------------------                 |
 | **Next.js**           | Framework for web application development     |
 | **React**             | User interface development                    |
@@ -69,8 +68,8 @@
 | **Yup**               | Form data validation                          |
 | **CSS Modules**       | Local component styling                       |
 | **Swiper**            | Image gallery implementation                  |
-| **React Hot Toast**   | Displaying toast notifications                |
-| **next/font**         | Optimized Google Fonts integration            |
+| **React Hot Toast**   | Toast notifications                           |
+| **next/font**         | Optimized font loading with Next.js           |
 
 ---
 
@@ -100,7 +99,7 @@ npm install
 npm run dev
 ```
 
-**5. After starting, open the following URL in your browser:**
+**5. Open the application in your browser:**
 
 ```bash
 http://localhost:3000
