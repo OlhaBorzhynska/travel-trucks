@@ -14,7 +14,7 @@
 
 ---
 
-## ✨ Main Features
+## ✨ Features
 
 **🏠 Home Page**
 - Introduction to the TravelTrucks service.
@@ -53,7 +53,7 @@
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 Tech Stack
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,git,github,figma,nextjs,ts,vercel,vscode&theme=light)](https://skillicons.dev)
 
